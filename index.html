@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robot Hero Sections</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+    />
+
+    <!-- script -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>
+  </head>
+  <body class="bg-[#000000] relative">
+    <!-- navbar -->
+    <nav
+      class="absolute top-0 z-10 block w-full max-w-full px-4 py-2 text-white bg-transparent rounded-none shadow-md h-max bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4"
+    >
+      <div class="flex items-center justify-between text-neutral-400">
+        <a
+          href="#"
+          class="mr-4 block cursor-pointer py-1.5 text-base font-medium leading-relaxed text-inherit antialiased"
+        >
+          <img src="src/images/logo robomate.png" alt="" class="w-auto h-8" />
+        </a>
+        <div class="flex items-center gap-6">
+          <div class="hidden mr-4 lg:block">
+            <ul
+              class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6"
+            >
+              <li
+                class="block p-1 text-sm antialiased font-normal leading-normal text-neutral-400"
+              >
+                <a href="#" class="flex items-center font-medium text-white">
+                  Pages
+                </a>
+              </li>
+              <li
+                class="block p-1 text-sm antialiased font-normal leading-normal text-neutral-400 hover:text-neutral-100"
+              >
+                <div role="button" class="flex items-center">Resources</div>
+              </li>
+              <li
+                class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-neutral-400 hover:text-neutral-100"
+              >
+                <a href="#" class="flex items-center"> Blocks </a>
+              </li>
+              <li
+                class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-neutral-400 hover:text-neutral-100"
+              >
+                <a href="#" class="flex items-center"> Docs </a>
+              </li>
+            </ul>
+          </div>
+          <!-- nav cta -->
+          <div class="flex items-center gap-x-1">
+            <button
+              class="hidden px-4 py-2 font-sans text-xs font-bold text-center text-white uppercase align-middle transition-all rounded-lg select-none hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+              type="button"
+            >
+              <span>Log In</span>
+            </button>
+            <div class="relative group">
+              <div
+                class="absolute bg-gradient-to-tr from-fuchsia-600 to-cyan-400 rounded-lg -inset-0.5 blur group-hover:blur-lg group-hover:-inset-1 group-hover:opacity-100 opacity-90 transition duration-1000 group-hover:duration-200"
+              ></div>
+              <button
+                class="relative hidden select-none rounded-lg bg-neutral-200 hover:bg-neutral-50 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-neutral-950 transition-all active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
+                type="button"
+              >
+                <span>Try it for Free</span>
+              </button>
+            </div>
+          </div>
+          <button
+            class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+            type="button"
+          >
+            <span
+              class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="absolute w-screen h-screen">
+      <!-- spline embed -->
+      <iframe
+        src="https://my.spline.design/robot-733e92b5c8ae525962373ca117f1a20b/"
+        frameborder="0"
+        width="100%"
+        height="100%"
+      ></iframe>
+      <div role="button" class="absolute w-40 h-auto right-4 bottom-3 group">
+        <div
+          class="flex items-center justify-center p-3 rounded-full gap-x-2 bg-neutral-900 group-hover:bg-neutral-800"
+        >
+          <img src="src/images/icons8-chat-96.png" alt="" class="w-auto h-8" />
+          <span class="text-neutral-300">Question?</span>
+        </div>
+      </div>
+      <!-- hero content -->
+      <div class="absolute bottom-0 left-0 right-0">
+        <!-- HEADING INFO -->
+        <div
+          class="absolute lg:w-1/4 -top-[92vh] lg:top-auto lg:bottom-[24vh] left-auto lg:left-[2%] pointer-events-none"
+        >
+          <div
+            class="absolute lg:rounded-lg lg:-inset-x-6 lg:-inset-y-8 inset-0 bg-black/50 lg:backdrop-blur-[200px] backdrop-blur-sm"
+          ></div>
+          <div class="p-5 lg:p-0">
+            <img
+              class="relative w-auto h-10 mb-4 sm:w-12 sm:h-12"
+              src="src/images/icons8-bot-96.png"
+              alt="bot"
+            />
+            <p class="relative text-xl lg:text-2xl text-neutral-200">
+              Introducing <span class="font-medium">RoboMate</span>, your
+              <span class="font-medium">AI home assistant</span> for smarter
+              living. Simplify tasks and boost security with cutting-edge
+              technology at your fingertips. Experience the future of home
+              automation now.
+            </p>
+          </div>
+        </div>
+        <!-- CALL TO ACTION -->
+        <div
+          class="absolute bottom-[8vh] w-full flex justify-center lg:w-auto lg:block left-1/2 -translate-x-1/2"
+        >
+          <div class="relative group">
+            <div
+              class="absolute transition duration-200 -inset-0.5 bg-gradient-to-br to-fuchsia-600 from-cyan-500 blur-md group-hover:blur-2xl group-hover:from-cyan-500 group-hover:to-fuchsia-600 group-hover:-inset-1"
+            ></div>
+            <button
+              class="relative select-none rounded-lg bg-white py-3.5 px-7 text-center align-middle font-sans text-sm font-bold uppercase text-neutral-950 group-hover:text-fuchsia-600 transition-all hover:shadow-lg focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+              type="button"
+            >
+              TRY ROBOMATE FOR FREE NOW! <span class="ml-2">→</span>
+            </button>
+          </div>
+        </div>
+        <!-- FEATURES  -->
+        <div
+          class="absolute w-full lg:w-1/5 xl:w-1/6 bottom-[24vh] lg:right-[2%]"
+        >
+          <div class="flex justify-center gap-6 lg:flex-col items-left">
+            <!-- voice recognition -->
+            <div class="">
+              <button
+                class="group"
+                data-ripple-light="true"
+                data-dialog-target="dialog1"
+              >
+                <div class="flex items-center gap-x-4">
+                  <span
+                    class="block p-4 transition duration-300 rounded-full group-hover:duration-100 bg-neutral-300 group-hover:bg-neutral-50 group-hover:scale-110"
+                  >
+                    <img
+                      class="w-6 h-6 translate-x-0.5"
+                      src="src/images/icons8-voice-recognition-96.png"
+                      alt="voice"
+                    />
+                  </span>
+                  <p
+                    class="hidden text-lg transition duration-300 md:block text-neutral-300 group-hover:text-neutral-50 group-hover:duration-100"
+                  >
+                    Voice Recognition
+                  </p>
+                </div>
+              </button>
+              <!-- modal dialog -->
+              <div
+                data-dialog-backdrop="dialog1"
+                data-dialog-backdrop-close="true"
+                class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+              >
+                <div
+                  data-dialog="dialog1"
+                  class="relative lg:w-3/5 lg:min-w-[40%] lg:max-w-[50%] md:max-w-lg m-4 text-base antialiased font-light leading-relaxed bg-white rounded-lg shadow-2xl text-blue-gray-500"
+                >
+                  <div
+                    class="flex items-center p-6 text-xl antialiased font-semibold leading-snug lg:text-2xl shrink-0 text-blue-gray-900"
+                  >
+                    Voice Recognition.
+                  </div>
+                  <!-- video features -->
+                  <div class="relative w-full aspect-video">
+                    <iframe
+                      class="w-full h-full"
+                      src="https://www.youtube.com/embed/uSNUmJffK4c?si=J1zLy9IT_v44EFs4"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div
+                    class="relative p-6 text-base antialiased font-normal leading-relaxed lg:text-xl text-neutral-700"
+                  >
+                    With RoboMate's advanced voice recognition technology,
+                    simply speak your commands and watch as your home responds
+                    effortlessly. From adjusting room temperatures to playing
+                    your favorite music, let your voice be the ultimate
+                    controller in your smart home experience.
+                  </div>
+                  <div
+                    class="flex flex-wrap items-center justify-end p-6 shrink-0 text-blue-gray-500"
+                  >
+                    <button
+                      data-ripple-light="true"
+                      data-dialog-close="true"
+                      class="select-none rounded-lg border border-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      CLOSE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- automation -->
+            <div class="">
+              <button
+                class="group"
+                data-ripple-light="true"
+                data-dialog-target="dialog2"
+              >
+                <div class="flex items-center gap-x-4">
+                  <span
+                    class="block p-4 transition duration-300 rounded-full group-hover:duration-100 bg-neutral-300 group-hover:bg-neutral-50 group-hover:scale-110"
+                  >
+                    <img
+                      class="w-6 h-6"
+                      src="src/images/icons8-automation-96.png"
+                      alt="voice"
+                    />
+                  </span>
+                  <p
+                    class="hidden text-lg transition duration-300 md:block text-neutral-300 group-hover:text-neutral-50 group-hover:duration-100"
+                  >
+                    Automation
+                  </p>
+                </div>
+              </button>
+              <!-- modal dialog -->
+              <div
+                data-dialog-backdrop="dialog2"
+                data-dialog-backdrop-close="true"
+                class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+              >
+                <div
+                  data-dialog="dialog2"
+                  class="relative lg:w-3/5 lg:min-w-[40%] lg:max-w-[50%] md:max-w-lg m-4 text-base antialiased font-light leading-relaxed bg-white rounded-lg shadow-2xl text-blue-gray-500"
+                >
+                  <div
+                    class="flex items-center p-6 text-xl antialiased font-semibold leading-snug lg:text-2xl shrink-0 text-blue-gray-900"
+                  >
+                    Automation.
+                  </div>
+                  <!-- video features -->
+                  <div class="relative w-full aspect-video">
+                    <iframe
+                      class="w-full h-full"
+                      src="https://www.youtube.com/embed/WSKi8HfcxEk?si=GpYbmOBhAzts811h"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div
+                    class="relative p-6 text-base antialiased font-normal leading-relaxed lg:text-xl text-neutral-700"
+                  >
+                    Experience unparalleled convenience with RoboMate's
+                    automation capabilities. From scheduling daily tasks to
+                    learning your preferences over time, RoboMate takes the
+                    hassle out of managing your home, allowing you to focus on
+                    what truly matters.
+                  </div>
+                  <div
+                    class="flex flex-wrap items-center justify-end p-6 shrink-0 text-blue-gray-500"
+                  >
+                    <button
+                      data-ripple-light="true"
+                      data-dialog-close="true"
+                      class="select-none rounded-lg border border-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      CLOSE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- iot integration -->
+            <div class="">
+              <button
+                class="group"
+                data-ripple-light="true"
+                data-dialog-target="dialog3"
+              >
+                <div class="flex items-center gap-x-4">
+                  <span
+                    class="block p-4 transition duration-300 rounded-full group-hover:duration-100 bg-neutral-300 group-hover:bg-neutral-50 group-hover:scale-110"
+                  >
+                    <img
+                      class="w-6 h-6 translate-x-0.5"
+                      src="src/images/icons8-voice-recognition-96.png"
+                      alt="voice"
+                    />
+                  </span>
+                  <p
+                    class="hidden text-lg transition duration-300 md:block text-neutral-300 group-hover:text-neutral-50 group-hover:duration-100"
+                  >
+                    iOT Integration
+                  </p>
+                </div>
+              </button>
+              <!-- modal dialog -->
+              <div
+                data-dialog-backdrop="dialog3"
+                data-dialog-backdrop-close="true"
+                class="pointer-events-none fixed inset-0 z-[999] grid h-screen w-screen place-items-center bg-black bg-opacity-60 opacity-0 backdrop-blur-sm transition-opacity duration-300"
+              >
+                <div
+                  data-dialog="dialog3"
+                  class="relative lg:w-3/5 lg:min-w-[40%] lg:max-w-[50%] md:max-w-lg m-4 text-base antialiased font-light leading-relaxed bg-white rounded-lg shadow-2xl text-blue-gray-500"
+                >
+                  <div
+                    class="flex items-center p-6 text-xl antialiased font-semibold leading-snug lg:text-2xl shrink-0 text-blue-gray-900"
+                  >
+                    iOT Integration.
+                  </div>
+                  <!-- video features -->
+                  <div class="relative w-full aspect-video">
+                    <iframe
+                      class="w-full h-full"
+                      src="https://www.youtube.com/embed/Q3ur8wzzhBU?si=TtTmaKRdS1Jqqk8l"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div
+                    class="relative p-6 text-base antialiased font-normal leading-relaxed lg:text-xl text-neutral-700"
+                  >
+                    Seamlessly connect and control all your smart devices with
+                    RoboMate's seamless IoT integration. Whether it's your smart
+                    lights, security cameras, or kitchen appliances, enjoy the
+                    convenience of managing everything from a single platform,
+                    ensuring a truly connected and efficient living environment.
+                  </div>
+                  <div
+                    class="flex flex-wrap items-center justify-end p-6 shrink-0 text-blue-gray-500"
+                  >
+                    <button
+                      data-ripple-light="true"
+                      data-dialog-close="true"
+                      class="select-none rounded-lg border border-gray-900 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-gray-900 transition-all hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                      type="button"
+                    >
+                      CLOSE
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/dialog.js"></script>
+  </body>
+</html>
